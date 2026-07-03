@@ -219,8 +219,5 @@ if __name__ == "__main__":
     final_output_dir = '/content/drive/MyDrive/Research2026/Sugarcane_Final_Dataset/'
     folders_to_clean = ['1_Healthy', '2_Natural_Dry', '3_Infected_Raw']
 
-    # Step 1: Clean raw dataset from anomalies and duplicates
     clean_dataset(root_dir, folders_to_clean)
-
-    # Step 2: Feature extraction, clustering, and final repository generation
     process_and_grade_dataset(root_dir, final_output_dir)
